@@ -1,0 +1,5 @@
+<launch>
+  <node name="spawn_chessboard" pkg="chess_baxter" type="spawn_chessboard_h.py" output="screen"/>
+  <node name="pick_and_place" pkg="chess_baxter" type="pick_and_place_moveit.py" output="screen"/>
+  <node name="tf_frames" pkg="chess_baxter" type="gazebo2tfframe.py" output="screen"/>
+</launch>
